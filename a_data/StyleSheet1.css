@@ -1,0 +1,101 @@
+﻿body {
+}
+
+.one {
+    float: left;
+}
+.check {
+   
+    background-color: red;
+   
+}
+
+
+
+.cc {
+}
+
+.col {
+    border: red 1px solid;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.selected {
+    background-color: green !important;
+}
+
+.selecting {
+    background-color: yellow !important;
+}
+a  {
+   color:red;
+    text-decoration: none;
+}
+.one_a {
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    
+    display: block;
+    text-decoration: none;
+}
+
+.one a {
+
+color: rgb(90, 90, 90);
+}
+.one_a span{
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+.animate-repeat,.ng-move,
+.animate-repeat,.ng-enter,
+.animate-repeat,.ng-leave {
+    -webkit-transition: all linear 5s;
+    -moz-transition: all linear 500s;
+    -o-transition: all linear 500s;
+    transition: all linear 500s;
+}
+#option_wrapper {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-left: 2px;
+    background-color: #808080;
+}
+.menu_content_classic {
+
+    cursor:pointer;
+
+
+
+}
+
+/*---------------------------table bill----------------------*/
+.sh {
+    display:block;
+    
+    width:80%;
+}
+.sh .c_name {
+        background-color:#eee;
+    width: 251px;
+   
+    
+    }
+.ss .row div
+{
+    float: left;
+    display: block;
+}
+   

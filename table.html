@@ -1,0 +1,69 @@
+﻿
+
+
+
+<!--<div class="container ss">
+	<div class="row" >
+		<div class="col-sm-1 ">
+			 Name
+		</div>
+		<div class="col-sm-1 ">
+			 quantity 
+		</div>
+		<div class="col-sm-1  ">
+			 price
+		</div>
+	</div>
+	<div class="row animate-repeat" ng-repeat="n in ff track by $index">
+		<div  class="col-sm-2 ">
+			    {{n.p_name}} 
+		</div>
+		<div class="col-sm-2 ">
+			  <input type="number" name="input" ng-init="example.value=1" placeholder="Quantity"  ng-model='example.value' min="1" max="99" required style="width: 15px"> 
+    
+		</div>
+		<div class=" col-sm-2">
+			 {{pertotal(n.price*example.value,$index)}}
+    
+		</div>
+		<div class=" col-sm-2">
+			  <a ng-click="delete1($index)" href=""><i class="icon-trash">delete</i></a>
+   
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2 ">
+			 Total:- {{sayHello()}}<input id="Button2" type="button" value="Pay" />
+		</div>
+	</div>
+</div>
+-->
+
+<table class="table sh" style="width:100%;">
+<tr>
+    <td class="c_name">Name
+    </td>
+    <td class="co_q">quantity </td>
+    <td class="co_p" colspan="2">price</td>
+</tr>
+<tr class="animate-repeat" ng-repeat="n in ff track by $index ">
+    <td class="c_name"  > 
+     {{n.p_name}} 
+    </td>
+    <td clss="co_q">
+        <input type="number" name="input" ng-init="example.value=1" placeholder="Quantity"  ng-model='example.value' min="1" max="99" required style="width: 33px"> 
+    </td>
+    <td class="auto-style2 co_p" >
+        {{isNaN(pertotal(n.price*example.value,$index,example.value),example.value)   }}
+    </td>
+    <td class="ck">
+        <a ng-click="delete1($index)" href=""><span class="glyphicon glyphicon-trash"></span>delete</a>
+    </td>
+    </tr>
+    <tr>
+        <td class="auto-style1"><span id="alert" style="color: #FF0000; float: left; display: block; font-size: medium;"></span></td>
+        <td class="auto-style3"> </td>
+        
+        <td class="auto-style2 " >Total:- {{isNaN(sayHello(),1)}}<input id="Button1" type="button" ng-click="change_view(ff)" value="Pay" /></td>
+    </tr>
+ </table>

@@ -1,0 +1,59 @@
+﻿  <div  style="margin:auto;width:40%;text-align:center;">
+        <h2 class="ppb_menu_title" id="counter"> Signature Dishes</h2>
+            <br class="clear" />
+            <br />
+<div class="one">
+<div class="menu_content_classic"  id="a1"  onclick="add(this)" ng-click='' >
+    <div class="menu_image">
+    <a id="inc" class="img_frame" href="#">
+      <img alt="" src="" />
+     </a></div>
+  
+      <h5 class="menu_post" id="ss"  >
+          <span class="menu_title" id="demo" >{{product1[0].p_name}} </span> 
+          <span class="menu_dots image"></span>
+          <span class="menu_price">{{product1[0].price|currency}}</span>
+      </h5>
+  
+    <div class="post_detail menu_excerpt">
+        {{product1[0].dec}}
+    </div>
+</div>
+</div>
+        <div class="one ">
+            <div class="menu_content_classic"  id="a2" onclick='add(this)' ng-click='' >
+                <div class="menu_image">
+                    <a class="img_frame" href="#">
+                        <img alt="" src="#" /></a>
+                </div>
+               <h5 class="menu_post">
+                    <span class="menu_title">{{product1[1].p_name}}</span> <span class="menu_dots image"></span>
+                    <span class="menu_price">{{product1[1].price|currency}}</span> </h5>
+              <div class="post_detail menu_excerpt">{{product1[1].dec}}</div>
+            </div>
+        </div>
+        <div class="one ">
+            <div class="menu_content_classic" id="a3"  onclick='add(this)' ng-click='sayHello()'>
+                <div class="menu_image">
+                    <a class="img_frame" href="#">
+                        <img alt="" src="#" /></a></div>
+               
+                    <h5 class="menu_post"><span class="menu_title">{{product1[2].p_name}}</span>
+                        <span class="menu_dots image"></span><span class="menu_price">{{ product1[2].price|currency}}</span> </h5>
+                   <div class="post_detail menu_excerpt">
+                       {{product1[2].dec}}</div>
+                </div>
+            </div>
+            <div class="one " >
+                <div class="menu_content_classic" id="a4"  onclick='add(this)' ng-click='sayHello()'>
+                    <div class="menu_image">
+                        <a class="img_frame" href="#">
+                        <img alt="" src="#" /></a></div>
+              
+                       <h5 class="menu_post"><span class="menu_title">{{product1[3].p_name}}</span>
+                            <span class="menu_dots image"></span><span class="menu_price">{{product1[3].price|currency}}</span> </h5>
+                  <div class="post_detail menu_excerpt">
+                        {{product1[3].dec}}</div>
+                </div>
+            </div>
+        </div>
